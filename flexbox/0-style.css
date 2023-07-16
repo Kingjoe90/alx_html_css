@@ -69,7 +69,8 @@
   
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
-  /** NAVBAR **/
+  
+    /** NAVBAR **/
     --nav-item-font-family: var(--font-family-headings);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
@@ -135,7 +136,8 @@
   a:active {
     background-color: var(--color-light-grey);
   }
-    .button {
+  
+  .button {
     display: var(--button-display);
     padding: var(--button-padding);
     border: var(--button-border);
@@ -143,6 +145,7 @@
     color: var(--button-color);
     text-decoration: var(--button-text-decoration);
   }
+  
   .button:hover {
     color: var(--button-hover-color);
     text-decoration: var(--button-hover-text-decoration);
@@ -150,7 +153,8 @@
     transition-duration: var(--transition-duration);
     transition-property: color, background-color;
   }
-    /* Helpers
+  
+  /* Helpers
       ============================= */
   
   .visually-hidden:not(:focus):not(:active) {
@@ -162,7 +166,7 @@
     white-space: nowrap;
   }
   
-/*** 2. LAYOUT ***/
+  /*** 2. LAYOUT ***/
   
   /* Layout
       ============================= */
@@ -172,30 +176,31 @@
     margin-left: auto;
     margin-right: auto;
   }
+  
   /* Grid
       ============================= */
-  
+  .row {
+    display: flex;
+  }
   ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  row::after {
-    content: '';
-    display: table;
-    clear: both;
-  }
-    [class*='col-'] {
-    float: left;
+
+  
+  [class*='col-'] {
     padding: 0.5rem;
   }
   
   .col-1-3 {
     width: 33.33%;
   }
-    .col-1-2 {
+  
+  .col-1-2 {
     width: 50%;
   }
+  
   /* Navbar
       ============================= */
   
@@ -491,4 +496,4 @@
     color: #efeded;
     font-size: 10rem;
     z-index: -1;
-  }
+                                                                                                                                                                    
